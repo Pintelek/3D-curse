@@ -1,0 +1,288 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Roboto', sans-serif;
+}
+
+ul, li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+img{
+  max-width: 100%;
+}
+@media(min-width:1200px){
+ .container{
+  max-width: 1140px;
+} 
+}
+:root{
+  --color1: #3F2AFF;
+}
+/* =============  HEADER  ============= */
+.header{
+ background: var(--color1);
+ overflow: hidden;
+}
+.container-header{
+  padding:28px 0;
+}
+.nav-item:not(:last-child){
+  margin-right: 56px;
+}
+
+.logo-link{
+ display: block;
+}
+
+.nav-list{ 
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+}
+.nav-list::-webkit-scrollbar{
+  display: none;
+}
+.nav-link1{
+  scrollbar-color: transparent;
+  scrollbar-track-color: red;
+  scrollbar-width: none;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.btn-form{
+  background:var(--color1);
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  border: none;
+}
+@media(max-width: 768px){
+  .logo-link{
+    display: block;
+    margin-bottom: 31px;
+   }
+
+
+}
+/* ============ HERO ============= */
+
+.hero{
+  background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+}
+
+.container-hero{
+  /* padding: 15px 0; */
+}
+
+.col-left{
+padding-top: 130px ;
+padding-bottom: 130px ;
+}
+.col-rigth{
+  /* display: flex;
+  align-items: center; */
+background: url(../IMG/hero-img-all.png)center/contain no-repeat;
+}
+.hero-title{
+  margin-bottom: 45px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+.hero-description{
+  margin-bottom: 70px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+.hero-btn{
+  padding: 24px 76px;
+ 
+}
+/* ========= about ============= */
+
+.container-about{
+  padding: 80px 0;
+}
+.row-up{
+  margin-bottom: 30px;
+}
+.about-left-img{
+  height: 100%;
+  background: url(../IMG/img-about.png)center/contain no-repeat;
+}
+.about-title{
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: #2E2B44;
+}
+.about-description{
+  max-width: 585px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #666666;
+}
+.item-icon{
+  margin-right: 30px;
+}
+
+.about-item-subtitle{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #666666;
+}
+
+/* =========== teachers ============= */
+.teachers{
+  background: #212133;
+}
+.teachers-container{
+  padding: 80px 0;
+}
+.teachers-title{
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+.teachers-img-block{
+  border-radius: 20px 20px 0px 0px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.teachers-img{
+width: 100%;
+}
+.teacher-name{
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+.teacher-text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #85859B;
+}
+/* ========== Курсы ========= */
+
+.courses-container{
+  padding: 80px 0;
+}
+.courses-title{
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: #212133;
+}
+.courses-bg{
+  overflow: hidden;
+}
+.courses-item:not(:nth-last-child(-n+2)){
+  margin-bottom: 30px; 
+}
+.courses-bg{
+  position: relative;
+  height: 100%;
+  background: #EDF0F9;
+  border-radius: 0 0 20px 20px;
+  padding: 210px 30px 30px 30px;
+}
+.curses-subtitle{
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #212133;
+}
+.courses-description{
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #666666;
+}
+.btn-block{
+  margin-top: auto;
+}
+.btn-courses{
+  padding: 20px 60px;
+}
+.time{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 13px;
+  right: 5px;
+}
+.time span{
+  display: inline-block;
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+
+
+/* ========= FOOTER ======== */
+
+.footer{
+  
+}
+.social-icon{
+  background: #2E2B44;
+  padding: 28px 0;
+}
+.icon:not(:first-child){
+ margin-left: 30px;
+}
+.copirate{
+  padding: 3px 0;
+}
+.copirate span{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #2E2B44;
+}
+
+
+
+
+
+@media(max-width: 576px){
+  .container{
+   padding-left: 15px;
+   padding-right: 15px;
+  }
+  .hero-title{
+    font-size: 40px;
+  }
+   }
