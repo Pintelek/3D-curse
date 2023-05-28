@@ -316,6 +316,9 @@ width: 100%;
     justify-content: center;
     margin-bottom: 31px;
   }
+  .nav-list{
+    justify-content: flex-start;
+  }
   .hero{
     background: radial-gradient(49% 49% at 67.78% 84.57%, #555681 0%, #2E2B44 100%);
   }
