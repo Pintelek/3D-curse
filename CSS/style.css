@@ -89,7 +89,10 @@ padding-top: 130px ;
 padding-bottom: 134px ;
 }
 .col-rigth{
-  background: url(../IMG/hero-img-all.png)50% 50%/contain no-repeat;
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background: url(../IMG/hero-img.png)50% 50%/contain no-repeat;
 }
 /* .img-hero{
   width: 100%;
@@ -115,6 +118,15 @@ padding-bottom: 134px ;
   padding: 24px 76px;
  
 }
+
+.cube-img{
+  position: absolute;
+  top: 10px;
+  left: -60px;
+  height: 230px;
+  width: 230px;
+  background: url(../IMG/hero-img2.png)center/contain no-repeat;
+}
 /* ========= about ============= */
 
 .container-about{
@@ -123,7 +135,21 @@ padding-bottom: 134px ;
 }
 .row-up{
   margin-bottom: 23px;
+  /* ---- */
+   /* opacity: 0;
+  transform: translate(-50%, -30%);
+  transition: transform 1s ease, opacity 1s ease; */
 }
+.about-item{
+ opacity: 0;
+  transform: translate(-80%, 10%);
+  transition: transform 1s ease, opacity 1s ease;
+}
+/* .about-item:nth-child(odd){
+   opacity: 0;
+  transform: translate(50%, 30%);
+  transition: transform 1s ease, opacity 1s ease;
+} */
 .about-left-img{
   height: 100%;
   background: url(../IMG/img-about.png)center/contain no-repeat;
@@ -134,7 +160,11 @@ padding-bottom: 134px ;
   font-size: 40px;
   line-height: 100%;
   color: #2E2B44;
+  /* ==== */
+ 
 }
+
+
 .about-description{
   max-width: 585px;
   font-weight: 400;
@@ -160,6 +190,11 @@ padding-bottom: 134px ;
 .teachers-container{
   padding-top: 73px;
   padding-bottom: 50px;
+}
+.teachers-item{
+  opacity: 0;
+  transform: translate(-50%, 0%);
+  transition: transform 1s ease, opacity 1s ease;
 }
 .teachers-title{
   margin-bottom: 24px;
@@ -203,6 +238,13 @@ width: 100%;
 }
 .courses-bg{
   overflow: hidden;
+
+  
+}
+.courses-item{
+  opacity: 0;
+  transform: translate(-50%, 0%);
+  transition: transform 1s ease, opacity 1s ease;
 
 }
 .courses-item:not(:nth-last-child(-n+2)){
@@ -278,9 +320,7 @@ width: 100%;
    .hero-title{
     font-size: 50px;
    }
-   .col-rigth{
-    background: url(../IMG/Group\ 204.png)50% 50%/contain no-repeat;
-  }
+ 
   .about-item{
     flex-direction: column;
   }
@@ -301,6 +341,11 @@ width: 100%;
   .btn-courses{
     font-size: 16px;
   }
+  .cube-img{
+   
+    height: 160px;
+    width: 160px;
+  }
 }
 
 @media(max-width: 767.5px){
@@ -314,6 +359,9 @@ width: 100%;
   }
   .hero-title{
     font-size: 50px;
+  }
+   .cube-img{
+    opacity: 0;
   }
 }
 
@@ -394,3 +442,10 @@ width: 100%;
     margin-bottom: 30px;
   }
    }
+
+   /* ===== */
+
+   html body .block-show{
+  opacity: 1;
+  transform: translate(0,0);
+}
