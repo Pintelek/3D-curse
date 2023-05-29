@@ -22,6 +22,5 @@ for(elem of elements){
 const cube = document.querySelector('.cube-img');
 
 window.addEventListener('scroll', ()=>{
-  console.log( window.scrollY)
   cube.style.transform = `rotate(${(0.5 * window.scrollY)}deg)`;
 })
